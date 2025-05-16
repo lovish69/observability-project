@@ -104,6 +104,18 @@ kube_pod_container_resource_requests_cpu_cores{namespace="observe"}
 ## Grafana
 ![grafana2](https://github.com/user-attachments/assets/f246a14c-40fa-4749-9b21-a74fd11212d8)
 
+## 🧠 How Prometheus Finds My App
+
+Prometheus doesn’t need manual scrape config for your app because the kube-prometheus-stack includes:
+
+    kube-state-metrics – exposes pod, deployment, container resource metadata
+
+    kubelet + cAdvisor – exposes live CPU/memory usage per container
+
+    ServiceMonitors – automatically configured via Helm to scrape those endpoints
+
+Since your app is a standard Kubernetes deployment with resource requests, Prometheus picks it up automatically.
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
