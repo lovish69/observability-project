@@ -31,10 +31,4 @@ jobs:
           push: true
           tags: lovish56456/observability:${{ github.run_id }}
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.email "lovishbarber69@gmail.com"
-          git config --global user.name "lovish69"
-          git add k8s/deployment.yml
-          git commit -m "Update tag in deployment.yml"
-          git push -u origin main
+      
