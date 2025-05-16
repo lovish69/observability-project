@@ -1,4 +1,4 @@
-# Kubernetes Observability Project using Argo CD, Prometheus, and Grafana
+# Kubernetes Observability Project using Docker, Argo CD, Prometheus, and Grafana
 
 This project demonstrates a complete DevOps pipeline where a static website is containerized using Docker, deployed to a Kubernetes cluster using GitOps with Argo CD, and monitored with Prometheus and Grafana using the `kube-prometheus-stack`.
 
